@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&family=Play&family=Press+Start+2P&display=swap');
+
+body{
+    background-image: url("https://wallpaperaccess.com/full/3186843.png");
+    background-repeat: repeat;
+    background-color: #000;
+    background-size: contain;
+    color: #eee;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-top: 0;
+    font-family: 'Play', sans-serif;
+    padding-top: 320px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Home */
+
+
+.first{
+    display: flex;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+
+.second{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222;
+    height: auto;
+    align-items: center;
+    z-index: 1;
+    font-size: 20px;
+    height: 60px;
+        
+}
+
+.pagingButton{
+    height: 45px;
+    background-color: #222;
+    color: yellow;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid white;
+}
+
+.createButton{
+    border: none;
+    color: yellow;
+
+}
+
+.createButton:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+.createButton:active{
+    background-color: rgb(255, 230, 0);
+    color: #000;
+}
+
+
+
+
+.pagingButton:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+.pagingButton:active{
+    background-color: rgb(255, 230, 0);
+    color: #000;
+}
+
+select{
+    height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: #eee;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.barsContainer{
+    position:fixed;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+    top: 0;
+}
+
+
+.third{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    padding: 5px;
+    z-index: 1;
+
+}
+
+.searchBar{
+    width: 100%;
+    margin-top: 0px;
+    height: 40px;
+    font-size: 25px;
+    z-index: 1;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: #ccc;
+    font-style: italic;
+}
+
+.searchBar:focus{
+    height: 45px;
+    transition: 300ms;
+    font-size: 35px;
+    background-color: #eee;
+    color: #222;
+    text-align: center;
+
+}
+
+.fourth{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+
+}
+
+.gridGame{
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+}
+
+.gridGame:hover{
+    transform: scale(1.01);
+    transition: 300ms;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.gridGame:active{
+    transform: scale(1.01);
+    transition: 200ms;
+    cursor: pointer;
+    z-index: 0;
+    background-color: #000;
+}
+
+.footer{
+ position: relative;   
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.2);
+}
+
+.footerText{
+    position: relative;
+    font-size: 20px;
+    margin-top: 30px;
+    bottom: 5px;
+    
+    
+}
+
+.footerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 15px;
+
+}
+
+/* Form */
+
+.formDetailTitleContainer{
+    margin-top: -320px;
+}
+
+
+.formContainer{
+    display: absolute;
+    position: relative;
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    margin-top: -40px;
+    padding: 10px;
+
+}
+
+.error{
+    color: #d00;
+    background-color: #000;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+
+}
+
+.formNameContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.formName{
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #333;
+    color: #eee;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.formName:focus{
+    height: 60px;
+    transition: 500ms;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.labelTitle{
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-family: 'Press Start 2P', cursive;
+    color: yellow;
+    margin-top: 50px;
+
+}
+
+.labelSubTitle{
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.checks{
+    font-size: 0px;
+
+}
+
+.formTitle{
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 0px;
+}
+
+.formsubTitle{
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 0px;
+}
+
+.formGenres{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;    
+    
+}
+
+
+
+.formPlatforms{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Orbitron', sans-serif;
+    justify-content: center;
+}
+
+.formReleasedRating{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 35px;
+}
+
+.formReleased, .formRating{
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    background-color: #333;
+    color: #eee;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+
+.formDescription{
+    width: 500px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #333;
+    color: #eee;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.formButton{
+    height: 120px;
+    width: 300px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 40px;
+
+}
+.formButton3{
+    height: 120px;
+    width: 300px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 40px;
+
+}
+
+.formButton:hover{
+    width: 360px;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: yellow;
+    color: #000;
+    transition: 500ms;
+    border: 5px #000 solid;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.formButton3:hover{
+    width: 360px;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: #d00;
+    color: #eee;
+    transition: 500ms;
+    border: 5px #eee solid;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.formButton3:active{
+    width: 350px;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgba(164, 1, 1, 0.948);
+    color: #fff;
+    transition: 500ms;
+    border: 5px #eee solid;
+    font-family: 'Press Start 2P', cursive;
+    
+
+}
+
+
+.formButton:active{
+    width: 350px;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(255, 230, 0);
+    color: #000;
+    transition: 200ms;
+    border: 8px #000 solid;
+    font-family: 'Press Start 2P', cursive;
+    
+
+}
+/* Detail*/
+
+.detailContainer{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000;
+    
+}
+
+.gameImg{
+  display: inline-block;
+}
+
+.detailDescription{
+    font-size: 25px;
+    padding: 50px;
+    background-color: #000;
+    border-radius: 20px;
+    text-align:justify;
+   
+}
+
+.loquesea{
+    color: yellow;
+    text-align: center;
+}
+
+.detailTitleContainer{
+    display: inline-block;
+    background-color: #000;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.detailTitle{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    color: yellow;
+}
+
+.releaseRating{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detailRating, .detailRelease{
+margin-top: 20px;
+font-size: 30px;
+background-color: #000;
+border: 2px solid yellow;
+border-radius: 20px;
+width: 500px;
+}
+
+button{
+    height: 60px;
+    align-items: center;
+    border: 2px solid #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    min-width: 150px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
+button:hover{
+    background-color: #000;
+    color: #eee;
+    border: 2px solid #fff;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+button:active{
+    color: yellow;
+}
+
+/* Landing */
+
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -330px;
+    
+}
+
+.marioTitle{
+   
+    padding-left: 0px;
+    background-image: url("https://preview.redd.it/7b2lzq3xh5m51.png?auto=webp&s=5faecd993c779bd0cd9391695409e61188762a77");
+    background-size:60px;
+    width: 50px;
+    background-repeat: no-repeat;
+    transition: linear .3s;
+}
+
+
+
+.marioTitle:hover{
+    background-image: url("http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/01a8702ff2527c5.png");
+    transition: 500ms;
+    background-size:85px;
+    width: 60px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-top: -10px;
+    
+}
+
+
+.title{
+    display: block;
+    position: relative;
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    margin-left: 15px;;
+    height: auto;
+    margin-top: 15px;
+}
+
+.pretitle{
+    display: block;
+    position: relative;
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.7);
+
+    
+}
+
+
+.title:active{
+    transform: scale(1.05);
+    transition: 800ms;
+}
+
+.landingTitle{
+        width: 1;
+        position: relative;
+        color: yellow;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 70px;
+        margin-bottom: 50px;
+        margin-left: 15px;;
+        height: auto;
+        margin-top: 15px;
+        background-color: rgba(0,0,0,0.7);
+}
+
+.pacman{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 170px;
+
+}
+
+.start{
+    display: flex;
+    border: #000 10px solid;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+
+}
+
+
+.start:hover{
+    transform: scale(1.01);
+    transition: 500ms;
+}
+
+
+
+/* Loader */
+
+.loaderText{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+
+}
+
+.loaderButton{
+    height: 120px;
+    font-size: 40px;
+    background-color: #000;
+    color: #ccc;
+    border: 8px solid #bbb;
+    border-radius: 30px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.loaderButton:hover{
+    transition: 500ms;
+    width: 320px ;
+    background-color: yellow;
+    color: #111;
+    border: 10px solid #333;
+
+}
+    
+.loaderButton:active{
+    transition: 300ms;
+    background-color: rgba(255, 234, 0, 0.937);
+}
+
+.loaderContainer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top:0;
+    height: auto;
+    font-family: 'Press Start 2P', cursive;
+    flex-direction: column;
+    width: 99vw;
+    border-radius:100px ;
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+.gifContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 5px;
+    height: 200px;
+    justify-content: center;
+}
+
+/* Card */
+
+.cardContainer{
+    border: 1px solid #eee;
+    height: 700px;
+    width: 500px ;
+    margin: 35px 0px;
+    padding: 10px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.cardTitle{
+    font-size: 35px;
+    /* height: auto; */
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    /* margin-top: 50px; */
+}
+
+.cardGenresScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;  
+   
+
+}
+
+
+
+.cardImg{
+    height: 250px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin-top: 40px; */
+}
+
+.cardGenres{
+    
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    height: 50px;
+    /* margin-top: 25px; */
+
+}
+
+.cardPlatforms{
+    /* margin-top: 0px; */
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.cardPlatform{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    color: yellow;
+
+
+}
+
+
+/* Return */
+
+
+.returnContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 40px;
+    height: 100vh;
+}
+
+.notFound{
+    margin-top: 200px;
+    color: #ccc;
+    font-size: 60px;
+    width: 100%;
+
+}
+
+.returnButton{
+    width: 100%;
+    height: 160px;
+    font-size: 40px;
+    background-color: #000;
+    color: #ccc;
+    padding: 10px;
+    border: 8px solid #bbb;
+    border-radius: 30px;
+    margin-bottom: 200px;
+}
+.returnButton:hover{
+    transition: 500ms;
+    background-color: yellow;
+    color: #222;
+    border: 15px solid black;
+
+}
